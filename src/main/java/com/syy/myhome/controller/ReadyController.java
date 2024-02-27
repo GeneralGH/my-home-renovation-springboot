@@ -1,0 +1,32 @@
+package com.syy.myhome.controller;
+
+import com.syy.myhome.common.Result;
+import com.syy.myhome.service.IReadyService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+/**
+ * <p>
+ * 准备 前端控制器
+ * </p>
+ *
+ * @author laoyang
+ * @since 2024-02-27
+ */
+@RestController
+@RequestMapping("/ready")
+@Api("准备")
+public class ReadyController {
+    @Autowired
+    private IReadyService readyService;
+
+    @GetMapping("/getList")
+    @ApiOperation("列表")
+    public Result getList() {
+        return readyService.getList();
+    }
+}
