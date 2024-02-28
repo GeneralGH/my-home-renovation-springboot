@@ -1,5 +1,6 @@
 package com.syy.myhome.service;
 
+import com.syy.myhome.common.Result;
 import com.syy.myhome.entity.Oiler;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -13,4 +14,11 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface IOilerService extends IService<Oiler> {
 
+    Result getList();
+
+    Result addOiler(Oiler oiler);
+
+    Result updateOiler(Oiler oiler);
+
+    Result delOiler(Long id);
 }

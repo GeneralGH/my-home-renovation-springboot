@@ -1,5 +1,6 @@
 package com.syy.myhome.service;
 
+import com.syy.myhome.common.Result;
 import com.syy.myhome.entity.Sealant;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -13,4 +14,11 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface ISealantService extends IService<Sealant> {
 
+    Result getList();
+
+    Result addSealant(Sealant sealant);
+
+    Result updateSealant(Sealant sealant);
+
+    Result delSealant(Long id);
 }

@@ -15,4 +15,10 @@ import com.baomidou.mybatisplus.extension.service.IService;
 public interface IReadyService extends IService<Ready> {
 
     Result getList();
+
+    Result addReady(Ready ready);
+
+    Result updateReady(Ready ready);
+
+    Result delReady(Long id);
 }
