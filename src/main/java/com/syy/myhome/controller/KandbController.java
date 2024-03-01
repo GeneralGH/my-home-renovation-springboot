@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.*;
  * @since 2024-02-27
  */
 @RestController
+//@CrossOrigin(origins = "${cors.origins}", allowCredentials = "true")
 @RequestMapping("/kandb")
 public class KandbController {
     @Autowired

@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.*;
  * @since 2024-02-27
  */
 @RestController
-@CrossOrigin(origins = "http://localhost:3001", allowCredentials = "true")
+//@CrossOrigin(origins = "${cors.origins}", allowCredentials = "true")
 @RequestMapping("/ready")
 @Api("准备")
 public class ReadyController {
