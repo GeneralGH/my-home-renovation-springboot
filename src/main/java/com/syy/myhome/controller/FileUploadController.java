@@ -21,8 +21,8 @@ import static cn.hutool.core.net.RFC3986.PATH;
 @RestController
 @RequestMapping("/file")
 public class FileUploadController {
-    private String Path = "E:\\homeImg\\";
-    private String IP = "http://localhost:8088";
+    private String Path = "/www/wwwroot/homeImg/";
+    private String IP = "https://lmtss.fun";
     /**
      * 文件上传
      * @param file
