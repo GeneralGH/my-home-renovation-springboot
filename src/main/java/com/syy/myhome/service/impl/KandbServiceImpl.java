@@ -30,7 +30,7 @@ public class KandbServiceImpl extends ServiceImpl<KandbMapper, Kandb> implements
     public Result getList() {
         LambdaQueryWrapper<Kandb> queryWrapper = new LambdaQueryWrapper<>();
         List<Kandb> Kandbs = kandbMapper.selectList(null);
-        return Result.success();
+        return Result.success(Kandbs);
     }
 
     @Override
